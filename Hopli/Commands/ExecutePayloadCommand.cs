@@ -1,6 +1,5 @@
+using Kommand.Abstractions;
+
 namespace Hopli.Commands;
 
-public class ExecutePayloadCommand
-{
-    
-}
+public sealed record ExecutePayloadCommand(string payloadPath) : ICommand<bool>;

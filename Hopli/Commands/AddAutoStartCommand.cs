@@ -1,6 +1,5 @@
+using Kommand.Abstractions;
+
 namespace Hopli.Commands;
 
-public class AddAutoStartCommand
-{
-    
-}
+public sealed record AddAutoStartCommand(string Path, AutoStartOptions Options) : ICommand<bool>;

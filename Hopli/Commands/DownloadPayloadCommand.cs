@@ -1,6 +1,5 @@
+using Kommand.Abstractions;
+
 namespace Hopli.Commands;
 
-public class DownloadPayloadCommand
-{
-    
-}
+public sealed record DownloadPayloadCommand(string PayloadPath, string OutputPath, string OutputFileName) : ICommand<bool>;

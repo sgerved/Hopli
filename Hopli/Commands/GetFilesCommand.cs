@@ -1,6 +1,5 @@
+using Kommand.Abstractions;
+
 namespace Hopli.Commands;
 
-public class GetFilesComnmand
-{
-    
-}
+public sealed record GetFilesCommand(string Path) : ICommand<List<string>>;
